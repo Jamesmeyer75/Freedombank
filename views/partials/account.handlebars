@@ -1,12 +1,9 @@
-        {{#if user}}
-            <h1 class='dash-header'>Hello, {{user.first_name}} {{user.last_name}}</h1>
-            <div class='balance'>
-                <p>Account Number: {{user.account_number}}</p>
-                <p>Balance: {{user.current_balance}}</p>
-            </div>
-            {{!-- <div class='transactions-box'>
-                <h1>box full of transactions</h1>
-            </div> --}}
-        {{else}}
-            {{> setupAccount}}
-        {{/if}}
+    {{#if user}}
+        <h1 class='dash-header'>Hello, {{user.first_name}} {{user.last_name}}</h1>
+        <div class='balance'>
+            <p>Account Number: {{user.account_number}}</p>
+            <p>Balance: {{user.current_balance}}</p>
+        </div>
+    {{else}}
+        {{> setupAccount}}
+    {{/if}}

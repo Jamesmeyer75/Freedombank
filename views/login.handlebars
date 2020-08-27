@@ -1,53 +1,23 @@
-
 <div class="header-section">
-  <div class='header-flexgrow1'></div>
+  <div class="left-header-flexbox"></div>
   <div class='header-flexgrow2'>
-      <img class="eagle" src="http://www.simpleimageresizer.com/_uploads/photos/d2ecd3ca/eagle_1_50x50.jpg"
-      alt="Eagle logo" />
-      <h1 class="eagle">Freedom Bank</h1>
+    <img class="eagle top-logo" src="/images/Eagle-logo_50x50.png" alt="Our logo"/>
+    <h1 class="eagle">Freedom Bank</h1>
   </div>
-    <div class="header-flexgrow1 button-box">
-      <div id='login'>Login</div>
-      <div id='signup'>Sign Up</div>
-    </div>
+  <div class="header-flexgrow1 button-box">
+    <div id='login'>Login</div>
+    <div id='signup'>Sign Up</div>
+  </div>
 </div>
 
-<nav class='nav-bar'>
-  <p class='dropdown'></p>
-  <p class='dropdown'></p>
-  <p class='dropdown'></p>
-  <p class='dropdown'></p>
-</nav>
-          {{> login-modal}}
-          {{> signup-modal}}
+{{> login-modal}}
+{{> signup-modal}}
 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-interval="5000">
       <div class="carousel-caption">
-        <div class="form-info">
-          <h3 id="intro">Personal banking made easy with Freedom Bank
-            Sign up or create an Account!
-          </h3>
-        </div>
-        <form>
-          <!-- Form -->
-          <div class="col-md-6">
-
-
-{{!-- 
-            <div class='jumbo-login-row'>
-              <div class="login-box">
-                <h10>Log into your Account</h10>
-                <div class="button-box">
-                  <button id='login'>login</button>
-                  <button id='signup'>signup</button>
-                </div>
-
-              </div>
-            </div> --}}
-          </div>
-
-        </form>
+        <h1 class="carousel-text">Personal banking made easy!
+        </h1>
       </div>
       <img id="slide-c"
         src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTU3OTIzNTgwMTQ0MTMzNzc4/how-did-the-bald-eagle-become-americas-national-birds-featured-photo.jpg"
@@ -55,7 +25,7 @@
     </div>
     <div class="carousel-item" data-interval="5000">
       <div class="carousel-caption">
-        <h1 class="display-2">The best financial tools to fit your life!</h3>
+        <h1 class="carousel-text">The best financial tools to fit your life!</h1>
 
       </div>
       <img id="slide-c" src="https://www.thumb.bank/Portals/0/Images/Box-P-Online-Banking.jpg" class="d-block w-100"
@@ -63,9 +33,9 @@
     </div>
     <div class="carousel-item" data-interval="5000">
       <div class="carousel-caption">
-        <h1 class="display-2">Extra security, Savings, & Rewards with MAXMONEY</h3>
+        <h1 class="carousel-text">Extra security, Savings, Rewards with MAX MONEY</h1>
       </div>
-      <img id="slide-c" src="https://beyondexclamation.com/wp-content/uploads/2019/07/Banking-Security.jpg"
+      <img id="slide-c" class="dim-image" src="https://beyondexclamation.com/wp-content/uploads/2019/07/Banking-Security.jpg"
         class="d-block w-100" alt="...">
     </div>
   </div>
@@ -78,26 +48,8 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-  {{!-- <div class='jumbo-container'>
-    
-    {{> login-modal}}
-    {{> signup-modal}}
 
-  <div class='jumbo-login-row'>
-      <div class="login-box">
-        <h1>Log into your Account</h1>
-        <div class="button-box">
-          <button id='login'>login</button>
-          <button id='signup'>signup</button>
-        </div>
-        <div class='login-box-info'>
-          <p><a href='#'>Forgot password?</a></p>
-        </div>
-      </div>
-  </div>
-</div>   --}}
-
-  <div class="container2">
+<div class="container2">
 
   <div class="ul-boxs">
     <div id='credit-card' class="box1 display-li">Find a credit card</div>
@@ -145,7 +97,7 @@
     <div id='buy-home-box'>
       <div class="home-info">
         <div class="home-text">
-          <p>Find your new home.</p>
+          <p>Find your new home</p>
         </div>
       </div>
       <div class="home-img-box">
@@ -195,6 +147,6 @@
 </div>
 
 
-  {{> footer }}
+{{> footer }}
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/login.js"></script>

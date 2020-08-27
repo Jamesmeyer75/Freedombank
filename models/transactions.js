@@ -16,7 +16,6 @@ module.exports = (sequelize, DataTypes) => {
         },
         transaction_type: {
             type: DataTypes.STRING,
-            // allowNull: false
         },
         comment: {
             type: DataTypes.TEXT
@@ -24,9 +23,6 @@ module.exports = (sequelize, DataTypes) => {
         amount: {
             type: DataTypes.DECIMAL(10, 2)
         },
-        // updated_balance: {
-        //     type: DataTypes.DECIMAL(10, 2)
-        // },
 
     }, {
         underscore: true
@@ -36,7 +32,6 @@ module.exports = (sequelize, DataTypes) => {
             as: "usertrans",
             foreignKey: "account_id"
         });
-        // Account.hasMany(Transaction);
     }
     return Transaction;
 }

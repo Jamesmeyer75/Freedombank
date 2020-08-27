@@ -1,28 +1,25 @@
 body{
   font-size:25px;
 }
+
+.left-header-flexbox {
+  height: 100px;
+  width: 18.1%;
+}
+
 .header-flexgrow1{
   display:flex;
-  flex-grow:1;
-  justify-content: flex-end;
+  width: 15;
+  justify-content: center;
   align-items: center;
 }
 .header-flexgrow2{
-  display:flex;
-  flex-grow:2;
+  display: flex;
+  margin: auto;
+  align-items: center;
   justify-content: center;
 }
-.nav-bar{
-  display:flex;
-  background-color:black;
-  color:whitesmoke;
-  margin-top:10px;
-  margin-bottom:10px;
-  width:960px;
-  margin-left:auto;
-  margin-right:auto;
-  justify-content: flex-start;
-}
+
 .dash-header{
   font-size:30px;
   text-align:center;
@@ -54,39 +51,12 @@ body{
   border-bottom:1px solid white;
 }
 
-/* .jumbo-container{
-  background-color:#1C5681;
-  background-image: url('https://www.pnb.com/assets/img/body-background.jpg');
-  background-size: 100% 100%;
-  border:2px solid black;
-  display:flex;
-  flex-direction: column;
-  justify-content: space-between; 
-  width: 100%;
-  height: 700px;
-} */
-
 .jumbo-login-row{
   margin-left: auto;
   margin-right: auto;
   width: 960px;
   display: flex;
 }
-/* 
-.login-box{
-  color:white;
-  margin-top:auto;
-  width:250px;
-  height:180px;
-  background-color:#08088b;
-  align-items: center;
-  justify-content: space-around;
-  margin-left:auto;
-  display:flex;
-  margin-bottom:200px;
-  flex-direction: column;
-} */
-
 
 /* -------------------MODAL ------------------ */
 .login-modal, .signup-modal, .send-money-modal{
@@ -173,7 +143,7 @@ body{
   flex-direction: column;
   justify-content: space-between; 
   width: 100%;
-  height: 550px;
+  height: 600px;
   background-color: white;
   margin-bottom: 50px;
 }
@@ -299,6 +269,10 @@ body{
   margin-top: 65px;
 }
 
+.info-box {
+  margin-top: 50px;
+}
+
 .card-img {
   display: flex;
   height: 225px;
@@ -316,7 +290,7 @@ body{
   display: flex;
   height: 19px;
   width: 19px;
-  margin: 116px 83px 80px 38px;
+  margin: 118.5px 0px 0px 40px;
   border-radius: 5px;
   background-image: url("../images/d20f0c2a-adf1-458c-94bb-df772ae0cfce_19x19.jpg");
   border: 2px solid rgb(184, 45, 3);
@@ -326,6 +300,7 @@ body{
   display: flex;
   font-size: 19px;
   padding-left: 22px;
+  margin: -6px 0px 0px 5px;
   color: white;
 }
 
@@ -340,10 +315,12 @@ body{
   border-radius: 120px;
   margin-top: -130px;
   margin-left: 100px;
+  filter: brightness(90%);
 } 
 
 .money-bank-logo {
-  margin-left: 21px;
+  margin: -7px 0px 7px 21px;
+  filter: brightness(150%);
 }
 
 .money-logo {
@@ -351,16 +328,17 @@ body{
   height: 19px;
   width: 19px;
   margin-top: 200px;
-  margin-left: 60px;
+  margin-left: 50px;
   border-radius: 5px;
   background-image: url("../images/d20f0c2a-adf1-458c-94bb-df772ae0cfce_19x19.jpg");
-  border: 2px solid rgb(184, 45, 3);
-  color: rgb(5, 5, 126);
+  border: 1px solid rgb(184, 45, 3);
+  color: rgb(5, 5, 126); 
+  filter: brightness(100%);
 }
 
 /* buy a home styling */
 .home-bank-logo {
-  margin-left: 21px;
+  margin: -7px 0px 0px 21px;
 }
 
 .home-img {
@@ -372,7 +350,7 @@ body{
   color: rgb(184, 45, 3);
   background-image: url("../images/download.png");
   margin-top: -100px;
-  margin-left: 100px;
+  margin-left: 140px;
 } 
 
 .home-logo {
@@ -389,7 +367,7 @@ body{
 
 /* Buy a car styling */
 .car-bank-logo {
-  margin-left: 21px;
+  margin: -8px 0px 5px 21px;
 }
 
 .car-img {
@@ -408,13 +386,15 @@ body{
   display: flex;
   height: 19px;
   width: 19px;
-  margin-top: 59px;
+  margin-top: 63px;
   margin-left: 160px;
   border-radius: 5px;
   background-image: url("../images/d20f0c2a-adf1-458c-94bb-df772ae0cfce_19x19.jpg");
   border: 2px solid rgb(184, 45, 3);
   color: rgb(5, 5, 126);
 }
+
+
 
 /* invest styling */
 .invest-bank-logo {
@@ -429,8 +409,7 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(184, 45, 3);
   background-image: url("../images/1_400x350.jpg");
-  margin-top: -160px;
-  margin-left: 100px;
+  margin: -125px 0px 125px 200px;
   border-radius: 15px;
 }
 /*----------Footer styling ------------*/
@@ -448,8 +427,16 @@ body{
   margin: auto;
 }
 
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  width: 31.5%;
+  float: left;
+}
+
 .img1 {
-  margin: 10px;
   display: inline-block;
   background-image: url("../images/facebook.png");
   height: 50px;
@@ -457,7 +444,6 @@ body{
 }
 
 .img2 {
-  margin: 10px;
   display: inline-block;
   background-image: url("../images/insta.jpg");
   height: 50px;
@@ -465,11 +451,25 @@ body{
 }
 
 .img3 {
-  margin: 10px;
   display: inline-block;
   background-image: url("../images/twitter.jpg");
   height: 50px;
   width: 50px;
+}
+
+.img1, .img2, .img3 {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.center-copyright {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.space-from-bottom {
+  margin: 5px;
 }
 
 .white-text {
@@ -518,8 +518,7 @@ hr {
   padding-right:15px;
   margin-right:15px;
 }
-.dash-username{
-}
+
 .dash-signout a{
   text-decoration: none;
   color:white;
@@ -592,12 +591,17 @@ hr {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 70px;
   color: white;
-  padding-top: 20px;
 }
 
 .eagle {
   display: inline-block;
-  height:50px;
+  height: 50px;
+  margin: 0px;
+}
+
+.top-logo {
+  border-radius: 10px;
+  margin-right: 10px;
 }
 
 #main-title-container {
@@ -640,64 +644,40 @@ li {
   display: none;
 }
 
-/*
-ul,
-li :hover ul li {
-  display: block;
-}*/
-
 .dropdown:hover {
   cursor: pointer;
   background-color: red;
 }
 
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
-}
-
-/* .d-blockw-100  img {
-  width: 100%;
-  height: 100%;
-} */
-
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.carousel-caption h1 {
-  font-size: 500%;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 15px #000;
-}
-
-.carousel-caption h10 {
-  font-size: 40px;
-}
-
-.carousel-caption h3 {
-  font-size: 200%;
-  font-weight: 500;
-  text-shadow: 1px 1px 10px #000;
+.carousel {
+  display: flex;
 }
 
 .carousel-inner img {
+  display: flex;
   width: 100%;
   height: 100%;
 }
 
-/* .d-blockw-100  img {
-  width: 100%;
-  height: 100%;
-} */
+.carousel-item {
+  display: flex;
+}
 
 .carousel-caption {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  margin: auto;
+  height: 55%;
+  width: 70%;
 }
+
+.carousel-text {
+  margin: auto;
+  color: #ffffff;
+}
+
+.dim-image {
+  filter: brightness(50%); 
+}
+
 .edit-info,.account-info{
   text-align:center;
   font-size:20px;
@@ -706,11 +686,7 @@ li :hover ul li {
   margin-left:auto;
   margin-right:auto;
 }
-.carousel-caption h1 {
-  font-size: 500%;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 15px #000;
-}
+
 #cancel-money, #send-money-confirm,.account-edit-button,#save-changes,#cancel-editing{
   margin-top:10px;
   background-color: #0275d8;
@@ -720,11 +696,7 @@ li :hover ul li {
   color:white;
   padding: 10px 15px 10px 15px;
 }
-.carousel-caption h3 {
-  font-size: 200%;
-  font-weight: 500;
-  text-shadow: 1px 1px 10px #000;
-}
+
 .login-box {
   width: 250px;
   height: 350px;
@@ -740,15 +712,6 @@ li :hover ul li {
   border-radius: 10px;
 }
 
-.footer {
-  display: flex;
-  height: 200px;
-  background-color: #fc1a1a;
-  color: rgb(117, 115, 115);
-  align-items: center;
-  padding: 0px 10px 0px 10px;
-}
-
 .fancy {
   width: 400px;
 }
@@ -759,27 +722,30 @@ hr {
 
 footer {
   background-color: #ff0202;
-  color: #d5d5d5;
+  color: #ffffff;
   padding-top: 40px;
   width: auto;
   height: auto;
 }
 
 hr.light {
+  margin: auto;
   border-top: 1px solid #f1f1f1;
-  width: 75%;
+  width: 85%;
   margin-top: 0.8rem;
   margin-bottom: 1rem;
+  
 }
 
 footer a {
   color: #ffffff;
 }
 
-.row text-center {
+.row .text-center {
   margin-left: auto;
   margin-right: auto;
 }
+
 .h10 {
   font-size: 9px;
 }
@@ -790,15 +756,7 @@ footer a {
 }
 
 #slide-c {
-  height: 650px;
-}
-
-#intro {
-  width: 400px;
-  height: 200px;
-  margin-bottom: -300px;
-  font-size: 30px;
-  font-style: italic;
+  height: 550px;
 }
 
 .account-container{
